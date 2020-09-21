@@ -12,7 +12,7 @@ export DEV_HOME="$HOME/Developer"
 #
 alias h='history'
 alias cls='clear'
-alias ls='ls -F'
+alias ls='ls -F --color'
 alias lt='grc tail -f'
 alias xc='export TERM=xterm-color; export CLICOLOR=1; export LSCOLORS=GxFxCxDxBxegedabagacad'
 alias dt='export TERM=dtterm'
@@ -136,4 +136,23 @@ function jj() {
 		sed -e 's/^.*-Dleiningen.original.pwd=//g' \
 			-e 's/-D.*leiningen.core.main//g' \
 			-e "s:$HOME:~:g"
+}
+
+#
+# This is a simple function to cleanup the GitHub Codespace once it's been
+# created. Basically, I need to remove the left-overs of the dotfiles setup
+# and clean up the permissions on all the files.
+#
+function cleanup () {
+	pushd $HOME
+	echo "cleaning up the dotfiles..."
+	rm -rf dotfiles install README.md
+	echo "resetting the ownership of the workspace..."
+	sudo chown -R drbob:drbob workspace
+	echo "cleaning up the permissions on the workspace..."
+	sudo chmod -R g-w workspace
+	sudo chmod -R o-w workspace
+	sudo setfacl -R -bn workspace
+	echo "done"
+	popd
 }
