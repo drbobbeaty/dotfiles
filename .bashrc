@@ -58,6 +58,12 @@ alias lcdr='lein do clean, deps, repl'
 alias lcdw='lein do clean, deps, run web'
 
 #
+# These are some nice aliases just for use in GitHub's Codebase as they
+# don't make any sense anywhere else.
+#
+alias pgcb='psql postgres'
+
+#
 # Make sure we have DISPLAY defined for X11
 #
 if [ -z $DISPLAY ]; then
