@@ -5,4 +5,4 @@
 # be it. Simple.
 #
 cp -r .* ~/
-
+chmod 0600 ~/.pgpass

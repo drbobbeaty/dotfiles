@@ -61,7 +61,7 @@ alias lcdw='lein do clean, deps, run web'
 # These are some nice aliases just for use in GitHub's Codebase as they
 # don't make any sense anywhere else.
 #
-alias pgcb='psql postgres'
+alias pgcb='psql -h localhost -p 5432 -U postgres postgres'
 
 #
 # Make sure we have DISPLAY defined for X11
