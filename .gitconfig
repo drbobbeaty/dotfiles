@@ -1,0 +1,34 @@
+[core]
+	excludesfile = /home/drbob/.gitignore
+	pager = less -x4
+[user]
+	name = Bob Beaty
+	email = drbob@themanfromspud.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[merge]
+	tool = opendiff
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[push]
+	default = simple
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

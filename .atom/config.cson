@@ -1,0 +1,25 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    fontFamily: "JetBrains Mono"
+    lineHeight: 1.2
+    showIndentGuide: true
+    showLineNumbers: false
+  "exception-reporting":
+    userId: "1a218690-6221-42de-a4ff-e78e1b9d1988"
+  welcome:
+    showOnStartup: false
+".basic.html.text":
+  editor:
+    tabLength: 4
+".js.source":
+  editor:
+    tabLength: 4
+".source.ts":
+  editor:
+    tabLength: 4

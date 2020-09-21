@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#
+# Simply copy all the dotfiles and directories to $HOME, and that should
+# be it. Simple.
+#
+cp -r .* ~/
+

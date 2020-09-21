@@ -1,0 +1,6 @@
+*~
+*.swp
+*.class
+._*
+.DS_Store
+.compile

@@ -1,0 +1,47 @@
+{
+  "_from": "https://www.atom.io/api/packages/fizzy/versions/0.21.0/tarball",
+  "_id": "fizzy@0.21.0",
+  "_inBundle": false,
+  "_integrity": "sha512-3CXB0kCfVgtRFhJV21gPoovLFhfnu0kWiFngaBV88cFFf+GmzPFoA6ZR+MxSvEaAI5lObetOPhaCAyNZWCzB5Q==",
+  "_location": "/fizzy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/fizzy/versions/0.21.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/fizzy/versions/0.21.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/fizzy/versions/0.21.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/fizzy/versions/0.21.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/fizzy/versions/0.21.0/tarball",
+  "_shasum": "c87505c8491db3e38503918fc6e3db79db588c04",
+  "_spec": "https://www.atom.io/api/packages/fizzy/versions/0.21.0/tarball",
+  "_where": "/private/var/folders/_y/m_8vxzx973bdc7l0k99jqqlm0000gp/T/apm-install-dir-118918-82436-h7xkzr.3j6mq",
+  "bugs": {
+    "url": "https://github.com/jglovier/fizzy/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A light-hearted, bright and bubbly syntax theme featuring bright colors, and inspired by the Espresso default highlighting, and the Soda Sublime Text 2 theme.",
+  "engines": {
+    "atom": ">0.39.0"
+  },
+  "homepage": "https://github.com/jglovier/fizzy#readme",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/atom/fizzy/raw/master/LICENSE.md"
+    }
+  ],
+  "name": "fizzy",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jglovier/fizzy.git"
+  },
+  "theme": "syntax",
+  "version": "0.21.0"
+}
