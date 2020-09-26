@@ -12,6 +12,13 @@ export DEV_HOME="$HOME/Development"
 #
 export GPG_TTY=`tty`
 #
+# These are where postgres is located for Codebase
+#
+export PGHOST=localhost
+export PGPORT=5432
+export PGUSER=postgres
+
+#
 # These are my standard aliases that I use all the time
 #
 alias h='history'
@@ -28,10 +35,6 @@ alias cwdcmd='winname "`echo $PWD | sed -e s,$HOME,~,`"'
 alias bbdc='ssh bobbeaty@bobbeaty.com'
 alias cu='cvs -q update'
 alias tcu='setenv COPYFILE_DISABLE true; tar zcvf \!* `cvs -q update | grep -v \^\? | sed -e "s/^[AM] //g"`; unsetenv COPYFILE_DISABLE'
-
-# these are the aliases for Vodori-specific work
-alias lmdb='mongo --host replicaset/mongodb:27017,mongodb:27018,mongodb:27019 --username dev-vodori-flow --password password --authenticationDatabase dev-vodori-flow'
-alias kd='kubectl --context dev'
 
 # usefule aliases for git - I love git!
 alias ga='git add'

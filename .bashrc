@@ -8,6 +8,13 @@ export EDITOR="vim"
 #
 export DEV_HOME="$HOME/Developer"
 #
+# These are where postgres is located for Codebase
+#
+export PGHOST=localhost
+export PGPORT=5432
+export PGUSER=postgres
+
+#
 # These are my standard aliases that I use all the time
 #
 alias h='history'
