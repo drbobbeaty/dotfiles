@@ -160,12 +160,12 @@ function cleanup () {
 	pushd $HOME
 	echo "cleaning up the dotfiles..."
 	rm -rf dotfiles install README.md
-	echo "resetting the ownership of the workspace..."
-	sudo chown -R drbob:drbob workspace
-	echo "cleaning up the permissions on the workspace..."
-	sudo chmod -R g-w workspace
-	sudo chmod -R o-w workspace
-	sudo setfacl -R -bn workspace
+	echo "resetting the ownership of the /workspaces..."
+	sudo chown -R drbob:drbob /workspaces
+	echo "cleaning up the permissions on the /workspaces..."
+	sudo chmod -R g-w /workspaces
+	sudo chmod -R o-w /workspaces
+	sudo setfacl -R -bn /workspaces
 	echo "done"
 	popd
 }
